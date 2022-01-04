@@ -3,6 +3,8 @@ GEM
   specs:
     addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
+    ansi (1.5.0)
+    builder (3.2.4)
     celluloid (0.18.0)
       timers (~> 4)
     celluloid-io (0.17.3)
@@ -32,16 +34,27 @@ GEM
     llhttp-ffi (0.4.0)
       ffi-compiler (~> 1.0)
       rake (~> 13.0)
+    mini_portile2 (2.4.0)
+    minitest (5.14.2)
+    minitest-reporters (1.4.2)
+      ansi
+      builder
+      minitest (>= 5.0)
+      ruby-progressbar
     mustermann (1.1.1)
       ruby2_keywords (~> 0.0.1)
     nio4r (2.5.8)
+    nokogiri (1.10.10)
+      mini_portile2 (~> 2.4.0)
     public_suffix (4.0.6)
     puma (5.5.2)
       nio4r (~> 2.0)
     rack (2.2.3)
     rack-protection (2.1.0)
       rack
-    rake (13.0.6)
+    rack-test (1.1.0)
+      rack (>= 1.0, < 3)
+    rake (13.0.3)
     rb-fsevent (0.11.0)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -53,6 +66,7 @@ GEM
       websocket-driver (>= 0.5.1)
     rerun (0.13.1)
       listen (~> 3.0)
+    ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     sinatra (2.1.0)
       mustermann (~> 1.0)
@@ -78,7 +92,12 @@ PLATFORMS
 
 DEPENDENCIES
   http
+  minitest (= 5.14.2)
+  minitest-reporters (= 1.4.2)
+  nokogiri (= 1.10.10)
   puma
+  rack-test (= 1.1.0)
+  rake (= 13.0.3)
   reel
   rerun (= 0.13.1)
   sinatra (= 2.1.0)
