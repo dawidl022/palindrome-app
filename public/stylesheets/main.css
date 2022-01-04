@@ -99,3 +99,6 @@ p {
 .result-fail{
   background-color: #e67642;
 }
+#phrase-input {
+  width: 100%;
+}
