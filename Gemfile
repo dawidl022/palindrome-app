@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem 'sinatra', '2.1.0'
 gem 'rerun', '0.13.1'
+gem 'dawidl022_palindrome'
 
 gem 'thin'
 gem 'puma'
